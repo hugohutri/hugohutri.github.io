@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* * {
-  color: #dddddd;
-  font-size: 1.8rem;
-} */
+/* Theme switch button */
+input:checked ~ .dot {
+  transform: translateX(100%);
+}

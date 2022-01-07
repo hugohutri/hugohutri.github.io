@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Projects from "./Projects/Projects";
 
 const Background = styled.div.attrs({
-  className: "w-screen h-screen bg-white dark:bg-black",
+  className: "w-screen h-screen bg-white dark:bg-neutral-900",
 })`
   background-attachment: fixed;
 `;

@@ -9,7 +9,7 @@ export const Card = () => {
         Simple & clean designs
       </h1>
 
-      <p className="text-gray-500 dark:text-gray-300">
+      <p className="text-gray-500 dark:text-gray-200 font-semibold">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
         nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
       </p>

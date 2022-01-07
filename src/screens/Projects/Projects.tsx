@@ -1,20 +1,20 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { Card } from "./components/Card";
+import { Header } from "./components/Header";
 import { ProjectGrid } from "./components/ProjectGrid";
+import { ThemeButton } from "./components/ThemeButton";
 
 interface ProjectsProps {}
 
-const ProjectsContainer = styled.div`
-  height: 100vh;
-`;
+const ProjectsContainer = styled.div``;
 
 const Projects: FC<ProjectsProps> = () => {
   return (
-    <ProjectsContainer className="p-10">
-      <h1 className="font-light text-blue-500 lg:text-7xl md:text-6xl text-5xl mb-5">
-        My Projects
-      </h1>
+    <ProjectsContainer>
+      <div className="flex justify-between">
+        <Header />
+        <ThemeButton />
+      </div>
       <ProjectGrid />
     </ProjectsContainer>
   );
