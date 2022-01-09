@@ -7,7 +7,7 @@ const Icon = styled(CodeAlt)`
 
 const StyledLinkButton = styled.a.attrs({
   className:
-    "inline-flex p-2 text-blue-500 capitalize transition-colors duration-200 bg-blue-100 rounded-full dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-300",
+    "inline-flex p-2 transition-colors duration-200 bg-blue-400 rounded-full dark:bg-blue-500 dark:text-white hover:underline hover:text-blue-600 dark:hover:text-blue-300",
 })``;
 
 export const LinkButton = ({ href }: { href: string }) => (
