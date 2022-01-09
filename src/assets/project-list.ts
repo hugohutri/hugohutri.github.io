@@ -2,12 +2,18 @@ import * as Icon from "@styled-icons/boxicons-regular";
 
 export type StyledIcon = typeof Icon.File;
 
+interface TimeSpan {
+  from: number;
+  to?: number;
+}
+export type Year = number | TimeSpan;
+
 export interface Project {
   icon: StyledIcon;
   title: string;
   description: string;
   skills: string[];
-  year?: number | { from: number; to?: number };
+  year: Year;
   link?: string;
 }
 
@@ -121,6 +127,33 @@ export const PROJECT_LIST: Project[] = [
       "My Bachelor's degree was about visualizating the amount of people nearby. I user Bluetooth sensor, Python, Linux and Typescript to create immersive visualization about nearby Bluetooth devices.",
     skills: ["Python", "Bluetooth", "Linux", "Typescript"],
     year: 2021,
+  },
+  {
+    title: "PlanetFix - Game for FGJ",
+    icon: Icon.Game,
+    description:
+      'PlanetFix was a Unity game made in 48 hours during FGJ (Finnish Game Jam). Our game was about "fixing the planet" and saving it from Covid by placing huge domes on top of cities.',
+    link: "https://github.com/hugohutri/Planetfix",
+    year: 2020,
+    skills: ["C#", "Unity"],
+  },
+  {
+    title: "PlanetFix - Game for FGJ",
+    icon: Icon.Game,
+    description:
+      'PlanetFix was a Unity game made in 48 hours during FGJ (Finnish Game Jam). Our game was about "fixing the planet" and saving it from Covid by placing huge domes on top of cities.',
+    link: "https://github.com/hugohutri/Planetfix",
+    year: 2020,
+    skills: ["C#", "Unity"],
+  },
+  {
+    title: "PlanetFix - Game for FGJ",
+    icon: Icon.Game,
+    description:
+      'PlanetFix was a Unity game made in 48 hours during FGJ (Finnish Game Jam). Our game was about "fixing the planet" and saving it from Covid by placing huge domes on top of cities.',
+    link: "https://github.com/hugohutri/Planetfix",
+    year: 2020,
+    skills: ["C#", "Unity"],
   },
   {
     title: "PlanetFix - Game for FGJ",

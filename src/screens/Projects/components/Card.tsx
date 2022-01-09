@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { Fullscreen } from "@styled-icons/boxicons-regular";
+import { FC, useState } from "react";
 import styled from "styled-components";
-import { Project } from "../../../assets/project-list";
+import { Project, Year } from "../../../assets/project-list";
+import { Button } from "./Button";
 import { LinkButton } from "./LinkButton";
 import { ProjectIcon } from "./ProjectIcon";
 
@@ -20,7 +23,7 @@ const YearText = styled.p.attrs({
 
 const StyledCard = styled.div.attrs({
   className:
-    "p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col ",
+    "p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col bg-white dark:bg-neutral-900",
 })``;
 
 const CardTop = styled.div.attrs({
@@ -28,32 +31,58 @@ const CardTop = styled.div.attrs({
 })``;
 
 const CardBottom = styled.div.attrs({
-  className: "mt-auto  pt-3",
+  className: "mt-auto pt-3 flex space-x-3",
 })``;
 
 const Row = styled.div.attrs({
   className: "flex flex-row space-x-3",
 })``;
 
+const BackgroundDim = styled.div.attrs({
+  className:
+    "w-screen h-screen bg-white/90 dark:bg-neutral-900/90 fixed transition-colors duration-1000",
+})``;
+
+const CardContainer: FC<{ isModal: boolean }> = (props) => {
+  return (
+    <div
+      className={`p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col bg-white dark:bg-neutral-900 ${
+        props.isModal ? "absolute mt-auto h- z-90" : ""
+      }`}
+    >
+      {props.children}
+    </div>
+  );
+};
+
 export const Card = (props: Project) => {
   const { title, description, link, icon, year } = props;
+  const [isModal, setIsModal] = useState(false);
 
-  const yearString =
-    typeof year === "number"
-      ? `${year}`
-      : `${year?.from}  -  ${year?.to ?? ""}`;
+  // "hover:absolute hover:bottom-0 hover:top-0 hover:z-10"
 
   return (
-    <StyledCard>
-      <CardTop>
-        <Row>
-          <ProjectIcon icon={icon} />
-          <YearText>{yearString}</YearText>
-        </Row>
-        <CardTitle>{title}</CardTitle>
-        <CardText>{description}</CardText>
-      </CardTop>
-      <CardBottom>{link && <LinkButton href={link} />}</CardBottom>
-    </StyledCard>
+    <>
+      {isModal && <BackgroundDim />}
+      <CardContainer isModal={isModal}>
+        <CardTop>
+          <Row>
+            <ProjectIcon icon={icon} />
+            <YearText>{yearToString(year)}</YearText>
+          </Row>
+          <CardTitle>{title}</CardTitle>
+          <CardText>{description}</CardText>
+        </CardTop>
+        <CardBottom>
+          {link && <LinkButton href={link} />}
+          <Button icon={Fullscreen} onClick={() => setIsModal(!isModal)} />
+        </CardBottom>
+      </CardContainer>
+    </>
   );
+};
+
+const yearToString = (year: Year) => {
+  if (typeof year === "number") return `${year}`;
+  return `${year.from}  -  ${year?.to ?? ""}`;
 };

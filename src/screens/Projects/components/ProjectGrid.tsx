@@ -3,7 +3,7 @@ import { PROJECT_LIST } from "../../../assets/project-list";
 import { Card } from "./Card";
 
 const CardGridContainer = styled.div.attrs({
-  className: "grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-5 ",
+  className: "grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-5 relative",
 })``;
 
 export const ProjectGrid = () => {
