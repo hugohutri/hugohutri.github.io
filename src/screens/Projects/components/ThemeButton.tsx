@@ -9,31 +9,43 @@ const LightIcon = styled(Sun)`
   color: white;
 `;
 
+const SwitchDot = styled.div.attrs({
+  className:
+    "dot absolute left-1 top-1 bg-blue-400 w-7 h-7 rounded-full transition text-center border-2 border-blue-400",
+})``;
+
+const SwitchBackground = styled.div.attrs({
+  className: "block w-20 h-9 rounded-full border-2 border-blue-400",
+})``;
+
+const SwitchContainer = styled.div.attrs({
+  className: "flex items-end mb-5",
+})``;
+
+const StyledLabel = styled.label.attrs({
+  className: "flex items-center cursor-pointer",
+})``;
+
 export const ThemeButton = () => {
   const { theme, toggleTheme } = useTheme();
 
-  const onToggle = () => {
-    toggleTheme();
-  };
-
   return (
-    <div className="flex items-end mb-5">
-      <label htmlFor="toggleB" className="flex items-center cursor-pointer">
+    <SwitchContainer>
+      <StyledLabel htmlFor="themeSwitch">
         <div className="relative">
           <input
             type="checkbox"
-            id="toggleB"
+            id="themeSwitch"
             className="sr-only"
             checked={theme === "dark"}
-            onChange={() => onToggle()}
+            onChange={toggleTheme}
           />
-          <div className="block w-20 h-9 rounded-full border-2 border-blue-400"></div>
-          <div className="dot absolute left-1 top-1 bg-blue-400 w-7 h-7 rounded-full transition text-center border-2 border-blue-400">
+          <SwitchBackground />
+          <SwitchDot>
             {theme === "dark" ? <DarkIcon /> : <LightIcon />}
-          </div>
+          </SwitchDot>
         </div>
-        <div className="ml-3 text-gray-700 font-medium"></div>
-      </label>
-    </div>
+      </StyledLabel>
+    </SwitchContainer>
   );
 };
