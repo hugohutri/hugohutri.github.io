@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Fullscreen } from "@styled-icons/boxicons-regular";
+import { ExitFullscreen, Fullscreen } from "@styled-icons/boxicons-regular";
 import { FC, useState } from "react";
 import styled from "styled-components";
 import { Project, Year } from "../../../assets/project-list";
 import { Button } from "./Button";
+import { CloseButton } from "./CloseButton";
+import { Images } from "./Images";
 import { LinkButton } from "./LinkButton";
 import { ProjectIcon } from "./ProjectIcon";
 
@@ -21,11 +23,6 @@ const YearText = styled.p.attrs({
   vertical-align: text-bottom;
 `;
 
-const StyledCard = styled.div.attrs({
-  className:
-    "p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col bg-white dark:bg-neutral-900",
-})``;
-
 const CardTop = styled.div.attrs({
   className: "flex flex-col space-y-3",
 })``;
@@ -40,21 +37,22 @@ const Row = styled.div.attrs({
 
 const BackgroundDim = styled.div.attrs({
   className:
-    "w-screen h-screen bg-white/90 dark:bg-neutral-900/90 fixed transition-colors duration-1000",
+    "w-screen h-screen backdrop-blur-[4px] bg-white/90 dark:bg-neutral-900/90 fixed top-0",
 })``;
 
 const CardContainer: FC<{ isModal: boolean }> = (props) => {
   return (
     <div
-      className={`p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col bg-white dark:bg-neutral-900 ${
-        props.isModal ? "absolute mt-auto h- z-90" : ""
+      className={`p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col  ${
+        props.isModal
+          ? "absolute mt-auto z-90 bg-white dark:bg-neutral-900 "
+          : ""
       }`}
     >
       {props.children}
     </div>
   );
 };
-
 export const Card = (props: Project) => {
   const { title, description, link, icon, year } = props;
   const [isModal, setIsModal] = useState(false);
@@ -64,18 +62,24 @@ export const Card = (props: Project) => {
   return (
     <>
       {isModal && <BackgroundDim />}
+
       <CardContainer isModal={isModal}>
         <CardTop>
+          {isModal && <CloseButton onClick={() => setIsModal(!isModal)} />}
           <Row>
             <ProjectIcon icon={icon} />
             <YearText>{yearToString(year)}</YearText>
           </Row>
           <CardTitle>{title}</CardTitle>
           <CardText>{description}</CardText>
+          <Images isModal={isModal} />
         </CardTop>
         <CardBottom>
           {link && <LinkButton href={link} />}
-          <Button icon={Fullscreen} onClick={() => setIsModal(!isModal)} />
+          <Button
+            icon={isModal ? ExitFullscreen : Fullscreen}
+            onClick={() => setIsModal(!isModal)}
+          />
         </CardBottom>
       </CardContainer>
     </>

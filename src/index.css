@@ -16,3 +16,8 @@ body {
 input:checked ~ .dot {
   transform: translateX(160%);
 }
+
+.card {
+  transition: all 1s linear;
+  margin-top: 0;
+}
