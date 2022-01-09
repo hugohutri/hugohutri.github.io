@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 type Theme = "dark" | "light";
 
@@ -37,9 +37,9 @@ export const ThemeButton = () => {
             checked={originalTheme === "dark"}
             onChange={(e) => onToggle(e)}
           />
-          <div className="block bg-gray-600 w-14 h-8 rounded-full"></div>
-          <div className="dot absolute left-1 top-1 bg-white dark:bg-black w-6 h-6 rounded-full transition text-center">
-            {theme === "dark" ? "🌙" : "🌞"}
+          <div className="block w-20 h-9 rounded-full border-2 border-blue-400"></div>
+          <div className="dot absolute left-1 top-1 bg-white dark:bg-black w-7 h-7 rounded-full transition text-center border-2 border-blue-400">
+            <p className="align-middle">{theme === "dark" ? "🌙" : "🌞"}</p>
           </div>
         </div>
         <div className="ml-3 text-gray-700 font-medium"></div>

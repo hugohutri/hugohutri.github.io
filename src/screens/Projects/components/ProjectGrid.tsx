@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { PROJECT_LIST } from "../project-list";
 import { Card } from "./Card";
 
 const CardGridContainer = styled.div.attrs({
@@ -8,13 +9,9 @@ const CardGridContainer = styled.div.attrs({
 export const ProjectGrid = () => {
   return (
     <CardGridContainer>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {PROJECT_LIST.map((project) => (
+        <Card {...project} />
+      ))}
     </CardGridContainer>
   );
 };

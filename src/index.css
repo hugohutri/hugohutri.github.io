@@ -14,5 +14,5 @@ body {
 
 /* Theme switch button */
 input:checked ~ .dot {
-  transform: translateX(100%);
+  transform: translateX(160%);
 }
