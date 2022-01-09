@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://hugohutri.github.io/projects/",
   "dependencies": {
+    "@styled-icons/boxicons-regular": "^10.38.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",

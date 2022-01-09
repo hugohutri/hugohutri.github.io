@@ -26,11 +26,11 @@ const CardBottom = styled.div.attrs({
 })``;
 
 export const Card = (props: Project) => {
-  const { title, description, link } = props;
+  const { title, description, link, icon } = props;
   return (
     <StyledCard>
       <CardTop>
-        <ProjectIcon />
+        <ProjectIcon icon={icon} />
         <CardTitle>{title}</CardTitle>
         <CardText>{description}</CardText>
       </CardTop>
