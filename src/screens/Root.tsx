@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { Route } from "react-router-dom";
 import PageContainer from "./PageContainer";
 
 // TODO: Routes
@@ -25,13 +25,7 @@ const Root = () => {
       document.documentElement.classList.remove("dark");
     }
   });
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<PageContainer />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <Route path="/" element={<PageContainer />} />;
 };
 
 export default Root;
