@@ -25,7 +25,7 @@ const Root = () => {
       document.documentElement.classList.remove("dark");
     }
   });
-  return <Route path="/" element={<PageContainer />} />;
+  return <PageContainer />;
 };
 
 export default Root;
