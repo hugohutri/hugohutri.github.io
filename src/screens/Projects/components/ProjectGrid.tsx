@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PROJECT_LIST } from "../project-list";
+import { PROJECT_LIST } from "../../../assets/project-list";
 import { Card } from "./Card";
 
 const CardGridContainer = styled.div.attrs({

@@ -48,7 +48,6 @@ export const ThemeButton = () => {
           />
           <div className="block w-20 h-9 rounded-full border-2 border-blue-400"></div>
           <div className="dot absolute left-1 top-1 bg-blue-400 w-7 h-7 rounded-full transition text-center border-2 border-blue-400">
-            {/* <p className="align-middle">{theme === "dark" ? "🌙" : "🌞"}</p> */}
             {theme === "dark" ? <DarkIcon /> : <LightIcon />}
           </div>
         </div>

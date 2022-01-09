@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledIcon } from "../project-list";
+import { StyledIcon } from "../../../assets/project-list";
 
 export const ProjectIcon = ({ icon }: { icon: StyledIcon }) => {
   const StyledIcon = styled(icon).attrs({
