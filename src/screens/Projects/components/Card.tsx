@@ -75,8 +75,8 @@ export const Card = (props: Project) => {
             <YearText>{yearToString(year)}</YearText>
           </Row>
           <CardTitle>{title}</CardTitle>
+          <Skills skills={skills} />
           <CardText>{description}</CardText>
-          {<Skills skills={skills} />}
           <Images isModal={isModal} images={images} />
         </CardTop>
 
@@ -86,7 +86,7 @@ export const Card = (props: Project) => {
             <Button
               icon={isModal ? ExitFullscreen : Fullscreen}
               onClick={() => setIsModal(!isModal)}
-              label={isModal ? "Close" : "Fullscreen"}
+              label={isModal ? "Minimize" : "Show image"}
             />
           )}
         </CardBottom>
