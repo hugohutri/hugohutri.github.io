@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/projects/static/css/main.85476551.css",
-    "main.js": "/projects/static/js/main.7858243c.js",
+    "main.js": "/projects/static/js/main.be5d18c0.js",
     "static/media/portfolio.png": "/projects/static/media/portfolio.ba0b390d563e41ae61c6.png",
     "static/media/minecraft.png": "/projects/static/media/minecraft.5e4b1756fab2db8a1f8e.png",
     "static/media/picatso1.png": "/projects/static/media/picatso1.fcaf5120d6d3698a21c4.png",
@@ -22,10 +22,10 @@
     "static/media/picatso2.jpg": "/projects/static/media/picatso2.87d53219865ad3e1ff65.jpg",
     "index.html": "/projects/index.html",
     "main.85476551.css.map": "/projects/static/css/main.85476551.css.map",
-    "main.7858243c.js.map": "/projects/static/js/main.7858243c.js.map"
+    "main.be5d18c0.js.map": "/projects/static/js/main.be5d18c0.js.map"
   },
   "entrypoints": [
     "static/css/main.85476551.css",
-    "static/js/main.7858243c.js"
+    "static/js/main.be5d18c0.js"
   ]
 }
