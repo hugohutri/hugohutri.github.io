@@ -46,7 +46,7 @@ const BackgroundDim = styled.div.attrs({
 
 const ModalContainer = styled.div.attrs({
   className:
-    "container fixed mt-auto top-20 z-90 bg-white dark:bg-neutral-900 lg:w-1/2 left-1/2 -translate-x-1/2",
+    "container fixed mt-auto top-20 z-90 bg-white dark:bg-neutral-900 lg:w-2/5 left-1/2 -translate-x-1/2",
 })``;
 
 const CardContainer: FC<{ isModal: boolean }> = (props) => {
@@ -61,8 +61,6 @@ const CardContainer: FC<{ isModal: boolean }> = (props) => {
 export const Card = (props: Project) => {
   const { title, description, link, icon, year, images } = props;
   const [isModal, setIsModal] = useState(false);
-
-  // "hover:absolute hover:bottom-0 hover:top-0 hover:z-10"
 
   return (
     <>
@@ -85,6 +83,7 @@ export const Card = (props: Project) => {
             <Button
               icon={isModal ? ExitFullscreen : Fullscreen}
               onClick={() => setIsModal(!isModal)}
+              label={isModal ? "Close" : "Fullscreen"}
             />
           )}
         </CardBottom>
