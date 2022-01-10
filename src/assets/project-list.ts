@@ -23,7 +23,7 @@ export const PROJECT_LIST: Project[] = [
     title: "My Portfolio",
     icon: Icon.News,
     description:
-      "Portfolio website made using React, TypeScript and Styled Components. I used focused on making the site responsive and keeping it simple. I also learned more about CI/CD and how to use Github Actions to automate testing and deploying.",
+      "Portfolio website made using React, TypeScript and Styled Components. I focused on making the site responsive and keeping it simple. I also learned more about CI/CD and how to use Github Actions to automate testing and deploying.",
     link: "https://github.com/hugohutri/hugohutri.github.io",
     year: 2022,
     skills: [
