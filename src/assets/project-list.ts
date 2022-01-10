@@ -15,6 +15,7 @@ export interface Project {
   skills: string[];
   year: Year;
   link?: string;
+  images?: string[];
 }
 
 export const PROJECT_LIST: Project[] = [
@@ -33,6 +34,7 @@ export const PROJECT_LIST: Project[] = [
       "HTML",
       "CI/CD",
     ],
+    images: ["portfolio.png"],
   },
   {
     title: "Genetic Algorithm and Neural Networks",
@@ -42,6 +44,7 @@ export const PROJECT_LIST: Project[] = [
     link: "https://github.com/hugohutri/digits-3d",
     year: 2021,
     skills: ["Matlab", "Git"],
+    images: ["digits-3d.png"],
   },
   {
     title: "This website",
@@ -58,6 +61,7 @@ export const PROJECT_LIST: Project[] = [
       "CSS",
       "HTML",
     ],
+    images: ["projects.png"],
   },
   {
     title: "Visma Projects",
@@ -94,6 +98,7 @@ export const PROJECT_LIST: Project[] = [
       "Express.js",
       "Node.js",
     ],
+    images: ["picatso1.png"],
   },
   {
     title: "Ray Tracer",
@@ -103,6 +108,7 @@ export const PROJECT_LIST: Project[] = [
     link: "https://github.com/hugohutri/ray-tracer",
     year: 2019,
     skills: ["C++"],
+    images: ["raytracer.png"],
   },
   {
     title: "Minecraft plugins",
@@ -111,6 +117,7 @@ export const PROJECT_LIST: Project[] = [
       "Dozens of Minecraft plugins and features made with TypeScript. I learned A LOT of typescript with these features, which were made for fun. I wrote more than 10000 lines of TypeScript and I also led a group of 5-8 people when developing these features.",
     skills: ["TypeScript", "Pixel Art", "Linux", "JSON"],
     year: { from: 2019, to: 2021 },
+    images: ["minecraft.jpg"],
   },
   {
     title: "Discord and Telegram Chat Bots",
@@ -119,6 +126,7 @@ export const PROJECT_LIST: Project[] = [
       "Multiple (5+) chatbots for Discord and Telegram. These bots ranged from Github automation to meme generation with face recognition. These were mostly for making life easier and add fun ways try different topics.",
     skills: ["Python", ",TypeScript"],
     year: { from: 2020 },
+    images: ["bot.png"],
   },
   {
     title: "Bluetooth Visualization",
@@ -127,6 +135,7 @@ export const PROJECT_LIST: Project[] = [
       "My Bachelor's degree was about visualizating the amount of people nearby. I user Bluetooth sensor, Python, Linux and Typescript to create immersive visualization about nearby Bluetooth devices.",
     skills: ["Python", "Bluetooth", "Linux", "Typescript"],
     year: 2021,
+    images: ["bt-sensor.png"],
   },
   {
     title: "PlanetFix - Game for FGJ",
@@ -136,32 +145,6 @@ export const PROJECT_LIST: Project[] = [
     link: "https://github.com/hugohutri/Planetfix",
     year: 2020,
     skills: ["C#", "Unity"],
-  },
-  {
-    title: "PlanetFix - Game for FGJ",
-    icon: Icon.Game,
-    description:
-      'PlanetFix was a Unity game made in 48 hours during FGJ (Finnish Game Jam). Our game was about "fixing the planet" and saving it from Covid by placing huge domes on top of cities.',
-    link: "https://github.com/hugohutri/Planetfix",
-    year: 2020,
-    skills: ["C#", "Unity"],
-  },
-  {
-    title: "PlanetFix - Game for FGJ",
-    icon: Icon.Game,
-    description:
-      'PlanetFix was a Unity game made in 48 hours during FGJ (Finnish Game Jam). Our game was about "fixing the planet" and saving it from Covid by placing huge domes on top of cities.',
-    link: "https://github.com/hugohutri/Planetfix",
-    year: 2020,
-    skills: ["C#", "Unity"],
-  },
-  {
-    title: "PlanetFix - Game for FGJ",
-    icon: Icon.Game,
-    description:
-      'PlanetFix was a Unity game made in 48 hours during FGJ (Finnish Game Jam). Our game was about "fixing the planet" and saving it from Covid by placing huge domes on top of cities.',
-    link: "https://github.com/hugohutri/Planetfix",
-    year: 2020,
-    skills: ["C#", "Unity"],
+    images: ["planetfix.jpg"],
   },
 ];

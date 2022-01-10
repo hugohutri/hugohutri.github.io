@@ -31,30 +31,35 @@ const CardBottom = styled.div.attrs({
   className: "mt-auto pt-3 flex space-x-3",
 })``;
 
+const CardBase = styled.div.attrs({
+  className:
+    "p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col overflow-y-auto",
+})``;
+
 const Row = styled.div.attrs({
   className: "flex flex-row space-x-3",
 })``;
 
 const BackgroundDim = styled.div.attrs({
+  className: "w-screen h-screen bg-white/90 dark:bg-neutral-900/90 fixed top-0",
+})``;
+
+const ModalContainer = styled.div.attrs({
   className:
-    "w-screen h-screen backdrop-blur-[4px] bg-white/90 dark:bg-neutral-900/90 fixed top-0",
+    "container fixed mt-auto top-20 z-90 bg-white dark:bg-neutral-900 lg:w-1/2 left-1/2 -translate-x-1/2",
 })``;
 
 const CardContainer: FC<{ isModal: boolean }> = (props) => {
+  if (!props.isModal) return <CardBase>{props.children}</CardBase>;
+
   return (
-    <div
-      className={`p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col  ${
-        props.isModal
-          ? "absolute mt-auto z-90 bg-white dark:bg-neutral-900 "
-          : ""
-      }`}
-    >
-      {props.children}
-    </div>
+    <ModalContainer>
+      <CardBase>{props.children}</CardBase>
+    </ModalContainer>
   );
 };
 export const Card = (props: Project) => {
-  const { title, description, link, icon, year } = props;
+  const { title, description, link, icon, year, images } = props;
   const [isModal, setIsModal] = useState(false);
 
   // "hover:absolute hover:bottom-0 hover:top-0 hover:z-10"
@@ -72,7 +77,7 @@ export const Card = (props: Project) => {
           </Row>
           <CardTitle>{title}</CardTitle>
           <CardText>{description}</CardText>
-          <Images isModal={isModal} />
+          <Images isModal={isModal} images={images} />
         </CardTop>
         <CardBottom>
           {link && <LinkButton href={link} />}
