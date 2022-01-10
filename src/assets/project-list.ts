@@ -147,4 +147,14 @@ export const PROJECT_LIST: Project[] = [
     skills: ["C#", "Unity"],
     images: ["planetfix.jpg"],
   },
+  {
+    title: "Terminal Chess",
+    icon: Icon.Terminal,
+    description:
+      "Graphical Chess application that can be run from the commandline. It was made using Python and it can run on Linux terminals with rgb color support.",
+    link: "https://github.com/hugohutri/terminal-chess",
+    year: 2020,
+    skills: ["Python", "Linux"],
+    images: ["terminal-chess.jpg"],
+  },
 ];
