@@ -124,7 +124,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.Bot,
     description:
       "Multiple (5+) chatbots for Discord and Telegram. These bots ranged from Github automation to meme generation with face recognition. These were mostly for making life easier and add fun ways try different topics.",
-    skills: ["Python", ",TypeScript"],
+    skills: ["Python", "TypeScript"],
     year: { from: 2020 },
     images: ["bot.jpg"],
   },

@@ -8,6 +8,7 @@ import { CloseButton } from "./CloseButton";
 import { Images } from "./Images";
 import { LinkButton } from "./LinkButton";
 import { ProjectIcon } from "./ProjectIcon";
+import { Skills } from "./Skills";
 
 const CardTitle = styled.h1.attrs({
   className: "text-2xl font-semibold text-gray-700 capitalize dark:text-white ",
@@ -28,7 +29,7 @@ const CardTop = styled.div.attrs({
 })``;
 
 const CardBottom = styled.div.attrs({
-  className: "mt-auto pt-3 flex space-x-3",
+  className: "mt-auto pt-5 flex space-x-3",
 })``;
 
 const CardBase = styled.div.attrs({
@@ -59,7 +60,7 @@ const CardContainer: FC<{ isModal: boolean }> = (props) => {
   );
 };
 export const Card = (props: Project) => {
-  const { title, description, link, icon, year, images } = props;
+  const { title, description, link, icon, year, images, skills } = props;
   const [isModal, setIsModal] = useState(false);
 
   return (
@@ -75,8 +76,10 @@ export const Card = (props: Project) => {
           </Row>
           <CardTitle>{title}</CardTitle>
           <CardText>{description}</CardText>
+          {<Skills skills={skills} />}
           <Images isModal={isModal} images={images} />
         </CardTop>
+
         <CardBottom>
           {link && <LinkButton href={link} />}
           {images && (
