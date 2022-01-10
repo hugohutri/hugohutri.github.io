@@ -1,23 +1,31 @@
 {
   "files": {
     "main.css": "/projects/static/css/main.338c3a84.css",
-    "main.js": "/projects/static/js/main.d8b83f41.js",
+    "main.js": "/projects/static/js/main.16d26197.js",
     "static/media/portfolio.png": "/projects/static/media/portfolio.ba0b390d563e41ae61c6.png",
+    "static/media/minecraft.png": "/projects/static/media/minecraft.5e4b1756fab2db8a1f8e.png",
     "static/media/picatso1.png": "/projects/static/media/picatso1.fcaf5120d6d3698a21c4.png",
-    "static/media/projects.png": "/projects/static/media/projects.6645bf115e87dce3a342.png",
+    "static/media/portfolio.jpg": "/projects/static/media/portfolio.c64531648cbe7040ffae.jpg",
+    "static/media/picatso1.jpg": "/projects/static/media/picatso1.0747a126c4e7675a39ae.jpg",
+    "static/media/projects.png": "/projects/static/media/projects.48d3e2dc806cb853e986.png",
+    "static/media/projects.jpg": "/projects/static/media/projects.3347a76fc129390c204e.jpg",
     "static/media/bot.png": "/projects/static/media/bot.3027932abe6d7d9f0756.png",
+    "static/media/minecraft.jpg": "/projects/static/media/minecraft.eae7118728b5b049c2ce.jpg",
+    "static/media/bt-sensor.jpg": "/projects/static/media/bt-sensor.1220a5f312ece6843413.jpg",
     "static/media/bt-sensor.png": "/projects/static/media/bt-sensor.38fded21fa809a0785cd.png",
     "static/media/planetfix.jpg": "/projects/static/media/planetfix.b286256f3312b7a65fa7.jpg",
     "static/media/digits-3d.png": "/projects/static/media/digits-3d.53403a88a1cef26a4b05.png",
-    "static/media/raytracer.png": "/projects/static/media/raytracer.8dd6082c5043e8cfc0f8.png",
+    "static/media/raytracer.png": "/projects/static/media/raytracer.98c16d6087663b9631fe.png",
+    "static/media/bot.jpg": "/projects/static/media/bot.fa9d095c2a73965fa1ad.jpg",
+    "static/media/digits-3d.jpg": "/projects/static/media/digits-3d.bb8734345020ef018db7.jpg",
+    "static/media/raytracer.jpg": "/projects/static/media/raytracer.14e816c1eef45b784e88.jpg",
     "static/media/picatso2.jpg": "/projects/static/media/picatso2.87d53219865ad3e1ff65.jpg",
-    "static/media/minecraft.jpg": "/projects/static/media/minecraft.05e21b45affe1930ffef.jpg",
     "index.html": "/projects/index.html",
     "main.338c3a84.css.map": "/projects/static/css/main.338c3a84.css.map",
-    "main.d8b83f41.js.map": "/projects/static/js/main.d8b83f41.js.map"
+    "main.16d26197.js.map": "/projects/static/js/main.16d26197.js.map"
   },
   "entrypoints": [
     "static/css/main.338c3a84.css",
-    "static/js/main.d8b83f41.js"
+    "static/js/main.16d26197.js"
   ]
 }
