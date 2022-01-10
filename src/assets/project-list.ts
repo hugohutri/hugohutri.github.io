@@ -23,7 +23,7 @@ export const PROJECT_LIST: Project[] = [
     title: "My Portfolio",
     icon: Icon.News,
     description:
-      "Portfolio website made using React, TypeScript and Styled Components. I focused on making the site responsive and keeping it simple. I also learned more about CI/CD and how to use Github Actions to automate testing and deploying.",
+      "Portfolio website made using React, TypeScriptb and Styled Components. I focused on making the site responsive and keeping it simple. I also learned more about CI/CD and how to use Github Actions to automate testing and deploying.",
     link: "https://github.com/hugohutri/hugohutri.github.io",
     year: 2022,
     skills: [
@@ -40,7 +40,7 @@ export const PROJECT_LIST: Project[] = [
     title: "Genetic Algorithm and Neural Networks",
     icon: Icon.Brain,
     description:
-      "Multi-model neural network trained with genetic algorithm to classify 3D numbers written into air. This project was made as a course project with two other students. The task was to implement the classifier using Matlab, without any high-level functions.",
+      "A multi-model neural network trained with genetic algorithm to classify 3D numbers written into the air. This project was made as a course project with two other students. The task was to implement the classifier using Matlab, without any high-level functions.",
     link: "https://github.com/hugohutri/digits-3d",
     year: 2021,
     skills: ["Matlab", "Git"],
@@ -50,7 +50,7 @@ export const PROJECT_LIST: Project[] = [
     title: "This website",
     icon: Icon.BookContent,
     description:
-      "This website was made for displaying my projects, and it was made using React, TypeScript, Tailwind CSS and Styled Components. I tried to create modern website with minimalistic design and Tailwind CSS was a good choise for that.",
+      "This website was made for displaying my projects, and it was made using React, TypeScript, Tailwind CSS, and Styled Components. I tried to create a modern website with minimalistic design and Tailwind CSS was a good choice for that.",
     link: "https://github.com/hugohutri/projects",
     year: 2022,
     skills: [
@@ -85,7 +85,7 @@ export const PROJECT_LIST: Project[] = [
     title: "Picatso - Party Game",
     icon: Icon.Desktop,
     description:
-      "A party game with React, JavaScript and Materialize styles. This was one of my earliest React projects and it taught a lot of about AJAX, responsive web design and React. This project was part of React Code Camp organized by Visma Consulting",
+      "A party game with React, JavaScript and Materialize styles. This was one of my earliest React projects and it taught me a lot about AJAX, responsive web design, and React. This project was part of React Code Camp organized by Visma Consulting",
     link: "https://github.com/hugohutri/picatso",
     year: 2020,
     skills: [
@@ -123,7 +123,7 @@ export const PROJECT_LIST: Project[] = [
     title: "Discord and Telegram Chat Bots",
     icon: Icon.Bot,
     description:
-      "Multiple (5+) chatbots for Discord and Telegram. These bots ranged from Github automation to meme generation with face recognition. These were mostly for making life easier and add fun ways try different topics.",
+      "Multiple (5+) chatbots for Discord and Telegram. These bots ranged from Github automation to meme generation with face recognition. These were mostly for making life easier and adding fun ways to try different topics.",
     skills: ["Python", "TypeScript"],
     year: { from: 2020 },
     images: ["bot.jpg"],
@@ -132,7 +132,7 @@ export const PROJECT_LIST: Project[] = [
     title: "Bluetooth Visualization",
     icon: Icon.Bluetooth,
     description:
-      "My Bachelor's degree was about visualizating the amount of people nearby. I user Bluetooth sensor, Python, Linux and Typescript to create immersive visualization about nearby Bluetooth devices.",
+      "My Bachelor's degree was about visualizing the number of people nearby. I used a Bluetooth sensor, Python, Linux, and Typescript to create immersive visualization about nearby Bluetooth devices.",
     skills: ["Python", "Bluetooth", "Linux", "Typescript"],
     year: 2021,
     images: ["bt-sensor.jpg"],
