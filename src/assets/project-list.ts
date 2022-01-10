@@ -34,7 +34,7 @@ export const PROJECT_LIST: Project[] = [
       "HTML",
       "CI/CD",
     ],
-    images: ["portfolio.png"],
+    images: ["portfolio.jpg"],
   },
   {
     title: "Genetic Algorithm and Neural Networks",
@@ -44,7 +44,7 @@ export const PROJECT_LIST: Project[] = [
     link: "https://github.com/hugohutri/digits-3d",
     year: 2021,
     skills: ["Matlab", "Git"],
-    images: ["digits-3d.png"],
+    images: ["digits-3d.jpg"],
   },
   {
     title: "This website",
@@ -61,7 +61,7 @@ export const PROJECT_LIST: Project[] = [
       "CSS",
       "HTML",
     ],
-    images: ["projects.png"],
+    images: ["projects.jpg"],
   },
   {
     title: "Visma Projects",
@@ -98,7 +98,7 @@ export const PROJECT_LIST: Project[] = [
       "Express.js",
       "Node.js",
     ],
-    images: ["picatso1.png"],
+    images: ["picatso1.jpg"],
   },
   {
     title: "Ray Tracer",
@@ -108,7 +108,7 @@ export const PROJECT_LIST: Project[] = [
     link: "https://github.com/hugohutri/ray-tracer",
     year: 2019,
     skills: ["C++"],
-    images: ["raytracer.png"],
+    images: ["raytracer.jpg"],
   },
   {
     title: "Minecraft plugins",
@@ -126,7 +126,7 @@ export const PROJECT_LIST: Project[] = [
       "Multiple (5+) chatbots for Discord and Telegram. These bots ranged from Github automation to meme generation with face recognition. These were mostly for making life easier and add fun ways try different topics.",
     skills: ["Python", ",TypeScript"],
     year: { from: 2020 },
-    images: ["bot.png"],
+    images: ["bot.jpg"],
   },
   {
     title: "Bluetooth Visualization",
@@ -135,7 +135,7 @@ export const PROJECT_LIST: Project[] = [
       "My Bachelor's degree was about visualizating the amount of people nearby. I user Bluetooth sensor, Python, Linux and Typescript to create immersive visualization about nearby Bluetooth devices.",
     skills: ["Python", "Bluetooth", "Linux", "Typescript"],
     year: 2021,
-    images: ["bt-sensor.png"],
+    images: ["bt-sensor.jpg"],
   },
   {
     title: "PlanetFix - Game for FGJ",

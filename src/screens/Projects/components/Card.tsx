@@ -81,10 +81,12 @@ export const Card = (props: Project) => {
         </CardTop>
         <CardBottom>
           {link && <LinkButton href={link} />}
-          <Button
-            icon={isModal ? ExitFullscreen : Fullscreen}
-            onClick={() => setIsModal(!isModal)}
-          />
+          {images && (
+            <Button
+              icon={isModal ? ExitFullscreen : Fullscreen}
+              onClick={() => setIsModal(!isModal)}
+            />
+          )}
         </CardBottom>
       </CardContainer>
     </>
