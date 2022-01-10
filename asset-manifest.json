@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/projects/static/css/main.85476551.css",
-    "main.js": "/projects/static/js/main.be5d18c0.js",
+    "main.js": "/projects/static/js/main.0324ab92.js",
     "static/media/portfolio.png": "/projects/static/media/portfolio.ba0b390d563e41ae61c6.png",
     "static/media/minecraft.png": "/projects/static/media/minecraft.5e4b1756fab2db8a1f8e.png",
     "static/media/picatso1.png": "/projects/static/media/picatso1.fcaf5120d6d3698a21c4.png",
@@ -20,12 +20,13 @@
     "static/media/digits-3d.jpg": "/projects/static/media/digits-3d.bb8734345020ef018db7.jpg",
     "static/media/raytracer.jpg": "/projects/static/media/raytracer.14e816c1eef45b784e88.jpg",
     "static/media/picatso2.jpg": "/projects/static/media/picatso2.87d53219865ad3e1ff65.jpg",
+    "static/media/terminal-chess.jpg": "/projects/static/media/terminal-chess.82b1c21b32336f9dccfb.jpg",
     "index.html": "/projects/index.html",
     "main.85476551.css.map": "/projects/static/css/main.85476551.css.map",
-    "main.be5d18c0.js.map": "/projects/static/js/main.be5d18c0.js.map"
+    "main.0324ab92.js.map": "/projects/static/js/main.0324ab92.js.map"
   },
   "entrypoints": [
     "static/css/main.85476551.css",
-    "static/js/main.be5d18c0.js"
+    "static/js/main.0324ab92.js"
   ]
 }
