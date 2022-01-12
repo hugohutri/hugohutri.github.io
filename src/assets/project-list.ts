@@ -14,7 +14,7 @@ export interface Project {
   description: string;
   skills: string[];
   year: Year;
-  link?: string;
+  repo?: string;
   images?: string[];
 }
 
@@ -24,7 +24,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.News,
     description:
       "Portfolio website made using React, TypeScript and Styled Components. I focused on making the site responsive and keeping it simple. I also learned more about CI/CD and how to use Github Actions to automate testing and deploying.",
-    link: "https://github.com/hugohutri/hugohutri.github.io",
+    repo: "https://github.com/hugohutri/hugohutri.github.io",
     year: 2022,
     skills: [
       "React",
@@ -41,7 +41,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.Brain,
     description:
       "A multi-model neural network trained with genetic algorithm to classify 3D numbers written into the air. This project was made as a course project with two other students. The task was to implement the classifier using Matlab, without any high-level functions.",
-    link: "https://github.com/hugohutri/digits-3d",
+    repo: "https://github.com/hugohutri/digits-3d",
     year: 2021,
     skills: ["Matlab", "Git"],
     images: ["digits-3d.jpg"],
@@ -51,7 +51,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.BookContent,
     description:
       "This website was made for displaying my projects, and it was made using React, TypeScript, Tailwind CSS, and Styled Components. I tried to create a modern website with minimalistic design and Tailwind CSS was a good choice for that.",
-    link: "https://github.com/hugohutri/projects",
+    repo: "https://github.com/hugohutri/projects",
     year: 2022,
     skills: [
       "React",
@@ -86,7 +86,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.Desktop,
     description:
       "A party game with React, JavaScript and Materialize styles. This was one of my earliest React projects and it taught me a lot about AJAX, responsive web design, and React. This project was part of React Code Camp organized by Visma Consulting",
-    link: "https://github.com/hugohutri/picatso",
+    repo: "https://github.com/hugohutri/picatso",
     year: 2020,
     skills: [
       "React",
@@ -105,7 +105,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.Sun,
     description:
       "Simple ray tracer made with C++ without any high-level libraries or rendering engines. The program controlled individual pixels and performed calculated paths for light rays and produces the final image by following the Phong reflection model. The final result was optimized for multithreading.",
-    link: "https://github.com/hugohutri/ray-tracer",
+    repo: "https://github.com/hugohutri/ray-tracer",
     year: 2019,
     skills: ["C++"],
     images: ["raytracer.jpg"],
@@ -126,6 +126,7 @@ export const PROJECT_LIST: Project[] = [
       "Jappe is a Telegram bot that can tell information about local Kyykkä-games. It fetches data from an API and can rank players and teams based on different measurements. It can for example show previous games and how many points the team got, or where the future games will be, and what is the estimated score the team will get.",
     skills: ["TypeScript", "ts-node", "REST", "JSON"],
     year: 2022,
+    repo: "https://github.com/hugohutri/kyykka-jappe",
     images: ["kyykkajappe.jpg"],
   },
   {
@@ -151,7 +152,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.Game,
     description:
       'PlanetFix was a Unity game made in 48 hours during FGJ (Finnish Game Jam). Our game was about "fixing the planet" and saving it from Covid by placing huge domes on top of cities.',
-    link: "https://github.com/hugohutri/Planetfix",
+    repo: "https://github.com/hugohutri/Planetfix",
     year: 2020,
     skills: ["C#", "Unity"],
     images: ["planetfix.jpg"],
@@ -161,7 +162,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.Terminal,
     description:
       "Graphical Chess application that can be run from the commandline. It was made using Python and it can run on Linux terminals with rgb color support.",
-    link: "https://github.com/hugohutri/terminal-chess",
+    repo: "https://github.com/hugohutri/terminal-chess",
     year: 2020,
     skills: ["Python", "Linux"],
     images: ["terminal-chess.jpg"],

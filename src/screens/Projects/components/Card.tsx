@@ -60,7 +60,7 @@ const CardContainer: FC<{ isModal: boolean }> = (props) => {
   );
 };
 export const Card = (props: Project) => {
-  const { title, description, link, icon, year, images, skills } = props;
+  const { title, description, repo: link, icon, year, images, skills } = props;
   const [isModal, setIsModal] = useState(false);
 
   return (
