@@ -120,7 +120,16 @@ export const PROJECT_LIST: Project[] = [
     images: ["minecraft.jpg"],
   },
   {
-    title: "Discord and Telegram Chat Bots",
+    title: "Jappe Kyykkäbot",
+    icon: Icon.Bot,
+    description:
+      "Jappe is a Telegram bot that can tell information about local Kyykkä-games. It fetches data from an API and can rank players and teams based on different measurements. It can for example show previous games and how many points the team got, or where the future games will be, and what is the estimated score the team will get.",
+    skills: ["TypeScript", "ts-node", "REST", "JSON"],
+    year: 2022,
+    images: ["kyykkajappe.jpg"],
+  },
+  {
+    title: "Other Discord and Telegram Bots",
     icon: Icon.Bot,
     description:
       "Multiple (5+) chatbots for Discord and Telegram. These bots ranged from Github automation to meme generation with face recognition. These were mostly for making life easier and adding fun ways to try different topics.",
