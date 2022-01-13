@@ -124,7 +124,7 @@ export const PROJECT_LIST: Project[] = [
     icon: Icon.Bot,
     description:
       "Jappe is a Telegram bot that can tell information about local Kyykkä-games. It fetches data from an API and can rank players and teams based on different measurements. It can for example show previous games and how many points the team got, or where the future games will be, and what is the estimated score the team will get.",
-    skills: ["TypeScript", "ts-node", "REST", "JSON"],
+    skills: ["TypeScript", "Jest", "ts-node", "REST", "JSON"],
     year: 2022,
     repo: "https://github.com/hugohutri/kyykka-jappe",
     images: ["kyykkajappe.jpg"],
