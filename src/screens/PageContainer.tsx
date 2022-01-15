@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Nav } from "../components/Nav";
+import { Home } from "./Home/Home";
 import Projects from "./Projects/Projects";
 
 const Background = styled.div.attrs({
@@ -8,7 +9,7 @@ const Background = styled.div.attrs({
 })``;
 
 const Container = styled.div.attrs({
-  className: "container mx-auto pt-48 pb-10 px-4 h-full",
+  className: "container mx-auto md:pt-48 pt-20 pb-10 px-4 h-full",
 })``;
 
 const PageContainer = () => {
@@ -17,6 +18,7 @@ const PageContainer = () => {
       <Nav />
       <Background />
       <Container>
+        <Home />
         <Projects />
       </Container>
     </>

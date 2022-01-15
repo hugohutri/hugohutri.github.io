@@ -4,6 +4,7 @@ import { FC, useState } from "react";
 import styled from "styled-components";
 import { Project, Year } from "../../../assets/project-list";
 import { Button } from "./Button";
+import { Text } from "../../../components/Text";
 import { CloseButton } from "./CloseButton";
 import { Images } from "./Images";
 import { LinkButton } from "./LinkButton";
@@ -12,10 +13,6 @@ import { Skills } from "./Skills";
 
 const CardTitle = styled.h1.attrs({
   className: "text-2xl font-semibold text-gray-700 capitalize dark:text-white ",
-})``;
-
-const CardText = styled.p.attrs({
-  className: "text-gray-500 dark:text-gray-200 font-semibold",
 })``;
 
 const YearText = styled.p.attrs({
@@ -76,7 +73,7 @@ export const Card = (props: Project) => {
           </Row>
           <CardTitle>{title}</CardTitle>
           <Skills skills={skills} />
-          <CardText>{description}</CardText>
+          <Text>{description}</Text>
           <Images isModal={isModal} images={images} />
         </CardTop>
 
