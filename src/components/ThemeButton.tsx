@@ -1,6 +1,6 @@
 import { Moon, Sun } from "@styled-icons/boxicons-regular";
 import styled from "styled-components";
-import useTheme from "../../../hooks/useTheme";
+import useTheme from "../hooks/useTheme";
 
 const DarkIcon = styled(Moon)`
   color: white;
@@ -11,15 +11,16 @@ const LightIcon = styled(Sun)`
 
 const SwitchDot = styled.div.attrs({
   className:
-    "dot absolute left-1 top-1 bg-blue-400 w-7 h-7 rounded-full transition text-center border-2 border-blue-400",
+    "dot absolute left-1 top-1 bg-blue-400 dark:bg-blue-400 w-7 h-7 rounded-full transition text-center p-0.5",
 })``;
 
 const SwitchBackground = styled.div.attrs({
-  className: "block w-20 h-9 rounded-full border-2 border-blue-400",
+  className:
+    "block w-20 h-9 rounded-full border-2 border-blue-400 dark:border-blue-300",
 })``;
 
 const SwitchContainer = styled.div.attrs({
-  className: "flex items-end mb-5",
+  className: "flex items-end",
 })``;
 
 const StyledLabel = styled.label.attrs({
