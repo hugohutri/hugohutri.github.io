@@ -4,10 +4,10 @@ import { ProjectGrid } from "./components/ProjectGrid";
 
 const Projects: FC = () => {
   return (
-    <>
+    <section id="projects">
       <Header>Projects</Header>
       <ProjectGrid />
-    </>
+    </section>
   );
 };
 

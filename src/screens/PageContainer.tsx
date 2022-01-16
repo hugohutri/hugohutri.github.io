@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Nav } from "../components/Nav";
+import { Nav } from "./Nav/Nav";
 import { Home } from "./Home/Home";
 import Projects from "./Projects/Projects";
 
