@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/projects/static/css/main.dfffaca5.css",
-    "main.js": "/projects/static/js/main.0fd9414f.js",
+    "main.css": "/projects/static/css/main.17efdf09.css",
+    "main.js": "/projects/static/js/main.db201cc8.js",
     "static/media/portfolio.png": "/projects/static/media/portfolio.ba0b390d563e41ae61c6.png",
     "static/media/minecraft.png": "/projects/static/media/minecraft.5e4b1756fab2db8a1f8e.png",
     "static/media/picatso1.png": "/projects/static/media/picatso1.fcaf5120d6d3698a21c4.png",
@@ -24,11 +24,11 @@
     "static/media/terminal-chess.jpg": "/projects/static/media/terminal-chess.82b1c21b32336f9dccfb.jpg",
     "static/media/kyykkajappe.jpg": "/projects/static/media/kyykkajappe.fb5be040e191f32a5660.jpg",
     "index.html": "/projects/index.html",
-    "main.dfffaca5.css.map": "/projects/static/css/main.dfffaca5.css.map",
-    "main.0fd9414f.js.map": "/projects/static/js/main.0fd9414f.js.map"
+    "main.17efdf09.css.map": "/projects/static/css/main.17efdf09.css.map",
+    "main.db201cc8.js.map": "/projects/static/js/main.db201cc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfffaca5.css",
-    "static/js/main.0fd9414f.js"
+    "static/css/main.17efdf09.css",
+    "static/js/main.db201cc8.js"
   ]
 }
