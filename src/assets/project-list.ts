@@ -20,33 +20,6 @@ export interface Project {
 
 export const PROJECT_LIST: Project[] = [
   {
-    title: "My Portfolio",
-    icon: Icon.News,
-    description:
-      "Portfolio website made using React, TypeScript and Styled Components. I focused on making the site responsive and keeping it simple. I also learned more about CI/CD and how to use Github Actions to automate testing and deploying.",
-    repo: "https://github.com/hugohutri/hugohutri.github.io",
-    year: 2022,
-    skills: [
-      "React",
-      "TypeScript",
-      "Styled Components",
-      "CSS",
-      "HTML",
-      "CI/CD",
-    ],
-    images: ["portfolio.jpg"],
-  },
-  {
-    title: "Genetic Algorithm and Neural Networks",
-    icon: Icon.Brain,
-    description:
-      "A multi-model neural network trained with genetic algorithm to classify 3D numbers written into the air. This project was made as a course project with two other students. The task was to implement the classifier using Matlab, without any high-level functions.",
-    repo: "https://github.com/hugohutri/digits-3d",
-    year: 2021,
-    skills: ["Matlab", "Git"],
-    images: ["digits-3d.jpg"],
-  },
-  {
     title: "This website",
     icon: Icon.BookContent,
     description:
@@ -62,6 +35,34 @@ export const PROJECT_LIST: Project[] = [
       "HTML",
     ],
     images: ["projects.jpg"],
+  },
+  {
+    title: "Genetic Algorithm and Neural Networks",
+    icon: Icon.Brain,
+    description:
+      "A multi-model neural network trained with genetic algorithm to classify 3D numbers written into the air. This project was made as a course project with two other students. The task was to implement the classifier using Matlab, without any high-level functions.",
+    repo: "https://github.com/hugohutri/digits-3d",
+    year: 2021,
+    skills: ["Matlab", "Git"],
+    images: ["digits-3d.jpg"],
+  },
+
+  {
+    title: "My Old Portfolio",
+    icon: Icon.News,
+    description:
+      "Portfolio website made using React, TypeScript and Styled Components. I focused on making the site responsive and keeping it simple. I also learned more about CI/CD and how to use Github Actions to automate testing and deploying.",
+    repo: "https://github.com/hugohutri/hugohutri.github.io",
+    year: 2022,
+    skills: [
+      "React",
+      "TypeScript",
+      "Styled Components",
+      "CSS",
+      "HTML",
+      "CI/CD",
+    ],
+    images: ["portfolio.jpg"],
   },
   {
     title: "Visma Projects",
