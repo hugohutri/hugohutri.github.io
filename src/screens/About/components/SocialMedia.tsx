@@ -3,7 +3,7 @@ import { SocialIcon as ReactSocialIcon } from "react-social-icons";
 import styled from "styled-components";
 
 const SocialIcon = styled(ReactSocialIcon).attrs({
-  className: "m-2 mt-48",
+  className: "m-2 sm:mt-48 mt-8",
 })``;
 
 const SocialIcons: FC<{ color: string }> = (props) => (
