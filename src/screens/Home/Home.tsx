@@ -2,6 +2,7 @@ import { FC } from "react";
 import styled from "styled-components";
 import ProfilePicture from "./components/ProfilePicture";
 import { HomeText } from "./components/HomeText";
+import { ScrollDownButton } from "./components/ScrollDownButton";
 
 const Name = styled.h1.attrs({
   className:
@@ -11,9 +12,12 @@ const Name = styled.h1.attrs({
 export const Home: FC = () => {
   return (
     <section id="home" className="min-h-screen md:mb-0 mb-20">
-      <Name>Hugo Hutri</Name>
-      <ProfilePicture />
-      <HomeText />
+      <div className="grid justify-items-center">
+        <Name>Hugo Hutri</Name>
+        <ProfilePicture />
+        <HomeText />
+        <ScrollDownButton />
+      </div>
     </section>
   );
 };
