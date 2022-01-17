@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Nav } from "./Nav/Nav";
 import { Home } from "./Home/Home";
 import Projects from "./Projects/Projects";
+import { About } from "./About/About";
 
 const Background = styled.div.attrs({
   className:
@@ -20,6 +21,7 @@ const PageContainer = () => {
       <Container>
         <Home />
         <Projects />
+        <About />
       </Container>
     </>
   );

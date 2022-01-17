@@ -5,8 +5,10 @@ import { ProjectGrid } from "./components/ProjectGrid";
 const Projects: FC = () => {
   return (
     <section id="projects">
-      <Header>Projects</Header>
-      <ProjectGrid />
+      <div className="grid justify-items-center">
+        <Header>Projects</Header>
+        <ProjectGrid />
+      </div>
     </section>
   );
 };

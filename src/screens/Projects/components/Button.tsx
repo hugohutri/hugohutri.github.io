@@ -3,7 +3,7 @@ import { StyledIcon } from "../../../assets/project-list";
 
 const StyledButton = styled.button.attrs({
   className:
-    "inline-flex p-2 transition-colors duration-200 bg-blue-400 hover:bg-blue-600 rounded-full dark:bg-blue-500 hover:dark:bg-blue-800 shadow-lg shadow-blue-600/50 ",
+    "inline-flex p-2 transition-colors duration-200 bg-blue-400 hover:bg-blue-600 rounded-full dark:bg-blue-500 hover:dark:bg-blue-800 shadow-lg shadow-blue-600/50",
 })``;
 
 const Label = styled.p.attrs({

@@ -12,7 +12,7 @@ export const Nav = () => {
         <div className="container flex px-4 ">
           <NavItem to="home" label="Home" />
           <NavItem to="projects" label="Projects" />
-          <NavItem to="home" label="About" />
+          <NavItem to="about" label="About" />
 
           <li className="mr-0 ml-auto">
             <ThemeButton />
