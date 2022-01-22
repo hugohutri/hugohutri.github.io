@@ -1,6 +1,6 @@
 import { scroller } from "react-scroll";
 
-export function ScrollDownButton() {
+export const ScrollDownButton = () => {
   return (
     <svg
       className="w-24 h-24 text-neutral-500 dark:text-white scale-400 mt-5 cursor-pointer hidden lg:block animate-pulse"
@@ -9,13 +9,7 @@ export function ScrollDownButton() {
       stroke="currentColor" // style="--darkreader-inline-stroke:currentColor;"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      onClick={() =>
-        scroller.scrollTo("projects", {
-          offset: -150,
-          spy: true,
-          smooth: true,
-        })
-      }
+      onClick={scrollToProjects()}
     >
       <path
         stroke-linecap="round"
@@ -25,4 +19,13 @@ export function ScrollDownButton() {
       ></path>
     </svg>
   );
+};
+
+function scrollToProjects() {
+  return () =>
+    scroller.scrollTo("projects", {
+      offset: -150,
+      spy: true,
+      smooth: true,
+    });
 }

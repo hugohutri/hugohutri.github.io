@@ -1,8 +1,13 @@
+import styled from "styled-components";
 import { Text } from "../../../components/Text";
+
+const TextContainer = styled.div.attrs({
+  className: "lg:w-5/12 md:w-8/12 w-10/12 text-justify mx-auto text-2xl",
+})``;
 
 export const HomeText = () => {
   return (
-    <div className="lg:w-5/12 md:w-8/12 w-10/12 text-justify mx-auto text-2xl">
+    <TextContainer>
       <Text>
         Hi! I am Hugo, and I am a software developer from Finland. Most of the
         time I do frontend magic with React and Typescript, but I like
@@ -13,6 +18,6 @@ export const HomeText = () => {
         below, and you can follow me on Github if you find those projects
         interesting!
       </Text>
-    </div>
+    </TextContainer>
   );
 };

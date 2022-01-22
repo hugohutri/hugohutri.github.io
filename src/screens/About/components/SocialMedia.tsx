@@ -2,18 +2,21 @@ import { FC } from "react";
 import { SocialIcon as ReactSocialIcon } from "react-social-icons";
 import styled from "styled-components";
 
+const Url = {
+  LINKEDIN: "https://www.linkedin.com/in/hugo-hutri",
+  GITHUB: "https://github.com/hugohutri",
+  INSTAGRAM: "https://www.instagram.com/huugooh",
+};
+
 const SocialIcon = styled(ReactSocialIcon).attrs({
   className: "m-2 sm:mt-48 mt-8",
 })``;
 
 const SocialIcons: FC<{ color: string }> = (props) => (
   <>
-    <SocialIcon url="https://github.com/hugohutri" bgColor={props.color} />
-    <SocialIcon
-      url="https://fi.linkedin.com/in/hugo-hutri-9401a815b"
-      bgColor={props.color}
-    />
-    <SocialIcon url="https://www.instagram.com/huugooh" bgColor={props.color} />
+    <SocialIcon url={Url.GITHUB} bgColor={props.color} />
+    <SocialIcon url={Url.LINKEDIN} bgColor={props.color} />
+    <SocialIcon url={Url.INSTAGRAM} bgColor={props.color} />
   </>
 );
 

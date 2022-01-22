@@ -1,6 +1,6 @@
 import { Moon, Sun } from "@styled-icons/boxicons-regular";
 import styled from "styled-components";
-import useTheme from "../../../hooks/useTheme";
+import { useTheme } from "../../../hooks/useTheme";
 
 const DarkIcon = styled(Moon)`
   color: white;
@@ -25,22 +25,26 @@ const SwitchContainer = styled.div.attrs({
 
 const StyledLabel = styled.label.attrs({
   className: "flex items-center cursor-pointer",
+  htmlFor: "themeSwitch",
 })``;
 
+const StyledInput = styled.input.attrs({
+  type: "checkbox",
+  id: "themeSwitch",
+  className: "sr-only",
+})``;
+
+/**
+ * A switch to toggle dark and light themes
+ */
 export const ThemeButton = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <SwitchContainer>
-      <StyledLabel htmlFor="themeSwitch">
+      <StyledLabel>
         <div className="relative">
-          <input
-            type="checkbox"
-            id="themeSwitch"
-            className="sr-only"
-            checked={theme === "dark"}
-            onChange={toggleTheme}
-          />
+          <StyledInput checked={theme === "dark"} onChange={toggleTheme} />
           <SwitchBackground />
           <SwitchDot>
             {theme === "dark" ? <DarkIcon /> : <LightIcon />}

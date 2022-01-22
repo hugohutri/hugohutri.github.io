@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { ExitFullscreen, Fullscreen } from "@styled-icons/boxicons-regular";
-import { FC, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { Project, Year } from "../../../assets/project-list";
 import { Button } from "./Button";
@@ -10,16 +10,16 @@ import { Images } from "./Images";
 import { LinkButton } from "./LinkButton";
 import { ProjectIcon } from "./ProjectIcon";
 import { Skills } from "./Skills";
+import { CardContainer } from "./CardContainer";
 
 const CardTitle = styled.h1.attrs({
   className: "text-2xl font-semibold text-gray-700 capitalize dark:text-white ",
 })``;
 
 const YearText = styled.p.attrs({
-  className: "text-gray-500 dark:text-gray-200 font-semibold mt-auto",
-})`
-  vertical-align: text-bottom;
-`;
+  className:
+    "text-gray-500 dark:text-gray-200 font-semibold mt-auto align-text-bottom",
+})``;
 
 const CardTop = styled.div.attrs({
   className: "flex flex-col space-y-3",
@@ -27,11 +27,6 @@ const CardTop = styled.div.attrs({
 
 const CardBottom = styled.div.attrs({
   className: "mt-auto pt-5 flex space-x-3",
-})``;
-
-const CardBase = styled.div.attrs({
-  className:
-    "p-8 border-2 border-blue-400 dark:border-blue-300 rounded-xl flex flex-col overflow-y-auto shadow-md shadow-blue-400/20",
 })``;
 
 const Row = styled.div.attrs({
@@ -42,20 +37,6 @@ const BackgroundDim = styled.div.attrs({
   className: "w-screen h-screen bg-white/90 dark:bg-neutral-900/90 fixed top-0",
 })``;
 
-const ModalContainer = styled.div.attrs({
-  className:
-    "container fixed mt-auto top-24 z-90 bg-white dark:bg-neutral-900 lg:w-2/5 left-1/2 -translate-x-1/2",
-})``;
-
-const CardContainer: FC<{ isModal: boolean }> = (props) => {
-  if (!props.isModal) return <CardBase>{props.children}</CardBase>;
-
-  return (
-    <ModalContainer>
-      <CardBase>{props.children}</CardBase>
-    </ModalContainer>
-  );
-};
 export const Card = (props: Project) => {
   const { title, description, repo: link, icon, year, images, skills } = props;
   const [isModal, setIsModal] = useState(false);

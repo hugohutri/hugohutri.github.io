@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function useTheme() {
+export function useTheme() {
   const INITIAL_THEME = localStorage.theme ?? getSystemTheme() ?? "dark";
 
   const [theme, setTheme] = useState(INITIAL_THEME);

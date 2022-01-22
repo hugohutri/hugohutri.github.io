@@ -1,22 +1,23 @@
 import { FC } from "react";
 import styled from "styled-components";
+import { CenteredGrid } from "../../components/CenteredGrid";
 import { Header } from "../../components/Header";
 import { AboutText } from "./components/AboutText";
 import SocialMedia from "./components/SocialMedia";
 
-const Section = styled.section.attrs({
+const AboutSection = styled.section.attrs({
   className: "min-h-screen md:mb-0 mb-20 mt-28",
   id: "about",
 })``;
 
 export const About: FC = () => {
   return (
-    <Section>
-      <div className="grid justify-items-center">
+    <AboutSection>
+      <CenteredGrid>
         <Header>About</Header>
         <AboutText />
         <SocialMedia />
-      </div>
-    </Section>
+      </CenteredGrid>
+    </AboutSection>
   );
 };
