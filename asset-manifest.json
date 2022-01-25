@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.522e30d2.css",
-    "main.js": "/static/js/main.b3073b09.js",
+    "main.css": "/static/css/main.cfdebedb.css",
+    "main.js": "/static/js/main.d81be3e3.js",
     "static/media/portfolio.png": "/static/media/portfolio.ba0b390d563e41ae61c6.png",
     "static/media/minecraft.png": "/static/media/minecraft.5e4b1756fab2db8a1f8e.png",
     "static/media/picatso1.png": "/static/media/picatso1.fcaf5120d6d3698a21c4.png",
@@ -26,11 +26,11 @@
     "static/media/terminal-chess.jpg": "/static/media/terminal-chess.82b1c21b32336f9dccfb.jpg",
     "static/media/kyykkajappe.jpg": "/static/media/kyykkajappe.fb5be040e191f32a5660.jpg",
     "index.html": "/index.html",
-    "main.522e30d2.css.map": "/static/css/main.522e30d2.css.map",
-    "main.b3073b09.js.map": "/static/js/main.b3073b09.js.map"
+    "main.cfdebedb.css.map": "/static/css/main.cfdebedb.css.map",
+    "main.d81be3e3.js.map": "/static/js/main.d81be3e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.522e30d2.css",
-    "static/js/main.b3073b09.js"
+    "static/css/main.cfdebedb.css",
+    "static/js/main.d81be3e3.js"
   ]
 }
