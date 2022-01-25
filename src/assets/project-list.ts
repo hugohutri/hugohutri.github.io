@@ -37,16 +37,15 @@ export const PROJECT_LIST: Project[] = [
     images: ["projects.jpg"],
   },
   {
-    title: "Genetic Algorithm and Neural Networks",
-    icon: Icon.Brain,
+    title: "Cluster ry logo with CSS",
+    icon: Icon.BookContent,
     description:
-      "A multi-model neural network trained with genetic algorithm to classify 3D numbers written into the air. This project was made as a course project with two other students. The task was to implement the classifier using Matlab, without any high-level functions.",
-    repo: "https://github.com/hugohutri/digits-3d",
-    year: 2021,
-    skills: ["Matlab", "Git"],
-    images: ["digits-3d.jpg"],
+      "Small project where I implemented Cluster ry's logo with pure HTML + CSS. No images, no SVGs, only CSS and this was mostly for fun and as a challenge for myself.",
+    repo: "https://github.com/hugohutri/cluster-logo-css",
+    year: 2022,
+    skills: ["CSS", "HTML"],
+    images: ["cluster-css.jpg"],
   },
-
   {
     title: "My Old Portfolio",
     icon: Icon.News,
@@ -65,10 +64,20 @@ export const PROJECT_LIST: Project[] = [
     images: ["portfolio.jpg"],
   },
   {
+    title: "Genetic Algorithm and Neural Networks",
+    icon: Icon.Brain,
+    description:
+      "A multi-model neural network trained with genetic algorithm to classify 3D numbers written into the air. This project was made as a course project with two other students. The task was to implement the classifier using Matlab, without any high-level functions.",
+    repo: "https://github.com/hugohutri/digits-3d",
+    year: 2021,
+    skills: ["Matlab", "Git"],
+    images: ["digits-3d.jpg"],
+  },
+  {
     title: "Visma Projects",
     icon: Icon.Briefcase,
     description:
-      "I have been working at Visma for almost two years as a software consultant. Projects have been ranging from React and React Native to Python, but my main focus has been on React + TypeScript",
+      "I have been working at Visma for almost two years as a software consultant. Projects have been ranging from React and React Native to Python, but my main focus has been on React + TypeScript.",
     skills: [
       "Git",
       "React",
@@ -79,6 +88,7 @@ export const PROJECT_LIST: Project[] = [
       "Node.js",
       "Express.js",
       "JavaScript",
+      "Web Components",
     ],
     year: { from: 2020 },
   },
@@ -86,7 +96,7 @@ export const PROJECT_LIST: Project[] = [
     title: "Picatso - Party Game",
     icon: Icon.Desktop,
     description:
-      "A party game with React, JavaScript and Materialize styles. This was one of my earliest React projects and it taught me a lot about AJAX, responsive web design, and React. This project was part of React Code Camp organized by Visma Consulting",
+      "A party game with React, JavaScript and Materialize styles. This was one of my earliest React projects and it taught me a lot about AJAX, responsive web design, and React. This project was part of React Code Camp organized by Visma Consulting.",
     repo: "https://github.com/hugohutri/picatso",
     year: 2020,
     skills: [

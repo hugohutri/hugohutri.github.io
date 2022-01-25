@@ -5,7 +5,12 @@ const Image = styled.img.attrs({
   className: "block w-full rounded-lg bg-black",
 })``;
 
-export const Images: FC<{ isModal: boolean; images?: string[] }> = (props) => {
+interface ImagesProps {
+  isModal: boolean;
+  images?: string[];
+}
+
+export const Images: FC<ImagesProps> = (props) => {
   /**
    * Images will be shown only when the modal is opened (style choise)
    */
