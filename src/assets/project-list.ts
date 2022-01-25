@@ -14,6 +14,7 @@ export interface Project {
   description: string;
   skills: string[];
   year: Year;
+  link?: string;
   repo?: string;
   images?: string[];
 }
@@ -42,6 +43,7 @@ export const PROJECT_LIST: Project[] = [
     description:
       "Small project where I implemented Cluster ry's logo with pure HTML + CSS. No images, no SVGs, only CSS and this was mostly for fun and as a challenge for myself.",
     repo: "https://github.com/hugohutri/cluster-logo-css",
+    link: "https://hutri.fi/cluster-logo-css/",
     year: 2022,
     skills: ["CSS", "HTML"],
     images: ["cluster-css.jpg"],
@@ -52,6 +54,7 @@ export const PROJECT_LIST: Project[] = [
     description:
       "Portfolio website made using React, TypeScript and Styled Components. I focused on making the site responsive and keeping it simple. I also learned more about CI/CD and how to use Github Actions to automate testing and deploying.",
     repo: "https://github.com/hugohutri/hugohutri.github.io",
+    link: "https://hutri.fi/old-portfolio/",
     year: 2022,
     skills: [
       "React",
